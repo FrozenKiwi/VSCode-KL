@@ -1,0 +1,26 @@
+{
+    "name": "kl",
+    "displayName": "VSCode-KL",
+    "description": "Code Colorizer for Fabric Engines KL Language",
+    "version": "0.0.1",
+    "publisher": "TADevelopment",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kl",
+            "aliases": ["KL", "kl"],
+            "extensions": [".kl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kl",
+            "scopeName": "source.kl",
+            "path": "./syntaxes/kl.tmLanguage"
+        }]
+    }
+}
